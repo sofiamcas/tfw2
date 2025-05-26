@@ -13,11 +13,10 @@ app.set('view engine','ejs');
 
 //conexion a la DB
 const db = mysql.createConnection({
-    host: '127.0.0.1',
+    host: 'host.docker.internal',
     user:'root',
     password: '12345678',
     database: 'node_crud',
-    port: 3306
 });
 
 //validacion
